@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Atv5-Exrc1</string>
+    <string-array name="quantidade_dados">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>

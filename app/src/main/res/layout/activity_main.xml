@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="93dp"
+        android:text="Escolha o tipo de dado:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupDados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <RadioButton
+            android:id="@+id/radioD4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D4" />
+
+        <RadioButton
+            android:id="@+id/radioD6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D6" />
+
+        <RadioButton
+            android:id="@+id/radioD8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D8" />
+
+        <RadioButton
+            android:id="@+id/radioD10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D10" />
+
+        <RadioButton
+            android:id="@+id/radioD12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D12" />
+
+        <RadioButton
+            android:id="@+id/radioD20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D20" />
+
+        <RadioButton
+            android:id="@+id/radioD100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D100" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Escolha a quantidade de dados:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupDados" />
+
+    <Spinner
+        android:id="@+id/spinnerDados"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/buttonRolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="Rolar Dados"
+        app:layout_constraintBottom_toTopOf="@+id/textViewResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="58dp"
+        android:paddingTop="16dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Otavio Gabriel Ribeiro Scabio - 1110482223043"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
